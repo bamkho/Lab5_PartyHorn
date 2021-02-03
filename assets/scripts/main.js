@@ -32,6 +32,14 @@ soundSlider.oninput = function () {
     else
         volumeImage.src = "./assets/media/icons/volume-level-0.svg";
 
+    if (integer == 0)
+        button.disabled = true;
+    else
+        button.disabled = false;
+
+
+
+
 }
 
 soundInput.oninput = function () {
@@ -45,6 +53,11 @@ soundInput.oninput = function () {
         volumeImage.src = "./assets/media/icons/volume-level-1.svg";
     else
         volumeImage.src = "./assets/media/icons/volume-level-0.svg";
+
+    if (integer == 0)
+        button.disabled = true;
+    else
+        button.disabled = false;
 }
 
 air.onclick = function () {
